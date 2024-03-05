@@ -1,0 +1,5 @@
+pip install django-jazzmin
+
+pip install django-smart-selects
+U: admin1@gmail.com
+ P: admin

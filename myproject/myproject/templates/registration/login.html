@@ -1,0 +1,10 @@
+
+<form method="post" >
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Login"><br>
+ <a href="{% url 'reset'%}" ><I>Forgot Password?</I></a>
+ <br>
+ <a href="{% url 'signup'%}" ><I>NEW USER</I></a>
+ {{errmsg}}
+</form>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Data</title>
+</head>
+<body>
+    <h1>Library View Status</h1>
+    <table border="2">
+        <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Author</td>
+            <td>price</td>
+            <td>Disccription</td>
+        </tr>
+        {% for j in data%}
+        <tr>
+            <td>{{j.name}}</td>
+            <td>{{j.email}}</td>
+            <td>{{j.author}}</td>
+            <td>{{j.price}}</td>
+            <td>{{j.discription}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

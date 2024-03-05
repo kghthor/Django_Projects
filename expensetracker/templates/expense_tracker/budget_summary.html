@@ -1,0 +1,12 @@
+
+{% extends 'registration\base.html' %}
+
+{% block content %}
+  <h2>Budget Summary</h2>
+  <p>Budget: ${{ user_profile.budget }}</p>
+  <p>Total Income: ${{ user_profile.total_income }}</p>
+  <p>Total Spend: ${{ user_profile.total_spend }}</p>
+  <p>Remaining Budget: ${{ user_profile.budget - user_profile.total_spend }}</p>
+  <a href="{% url 'set_budget' %}">Set Budget</a>
+  <a href="{% url 'add_income' %}">Add Income</a>
+{% endblock %}
