@@ -3,7 +3,7 @@ from app2.models import reg
 
 # Create your views here.
 def view2(request):
-    if request.method=='POST':
+    if request.method=='POST': 
         obj=reg()
         obj.name=request.POST.get("name")
         obj.email=request.POST.get("email")
